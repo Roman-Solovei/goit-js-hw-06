@@ -10,7 +10,7 @@ const ingredients = [
 
 const ulList = document.querySelector("#ingredients");
 
-const ingredientsEl = ingredients.forEach(ingredient => {
+const ingredientsEl = ingredients.map(ingredient => {
   const ulEl = document.createElement("li");
     ulEl.textContent = `${ingredient}`;
     ulEl.classList.add('item');  
