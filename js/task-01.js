@@ -1,12 +1,12 @@
 "use strict";
 
-const menuItems = document.querySelectorAll(".item");
-console.log(`Number of categories: ${menuItems.length}`);
+const itemsEl = document.querySelectorAll(".item");
+console.log(`Number of categories: ${itemsEl.length}`);
 
 
 
-const  categoryItems = document.querySelectorAll('#categories>li');
-categoryItems.forEach(elem => {
+const  categoryEl = document.querySelectorAll('#categories>li');
+categoryEl.forEach(elem => {
 console.log(
     `Category: ${elem.firstElementChild.textContent}
 Elements: ${elem.lastElementChild.children.length}`,
