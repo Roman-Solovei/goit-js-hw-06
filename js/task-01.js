@@ -1,8 +1,5 @@
-"use strict";
-
 const itemsEl = document.querySelectorAll(".item");
 console.log(`Number of categories: ${itemsEl.length}`);
-
 
 
 const  categoryEl = document.querySelectorAll('#categories>li');
