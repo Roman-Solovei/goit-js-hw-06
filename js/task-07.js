@@ -6,6 +6,6 @@ fontSizeControl.addEventListener('input', () => {
 
   const size = fontSizeControl.value;
   
-  testText.style.fontSizeControl = size + "px";
+  testText.style.fontSize = size + "px";
 
 });
