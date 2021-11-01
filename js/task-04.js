@@ -1,6 +1,6 @@
 
 
-let counterValue = Number(document.querySelector('#value').textContent);
+let counterValue = document.querySelector('#value').textContent;
 
 
 const inkBtn = document.querySelector("[data-action='increment']");
