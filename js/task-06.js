@@ -1,13 +1,8 @@
-
-
 let inputText = document.querySelector('#validation-input');
-
 
 let inputLength = Number(inputText.getAttribute('data-length'));
 
-
 const input = document.querySelector('input');
-
 
 inputText.addEventListener('blur', () => {
   const text = inputText.value;
@@ -25,6 +20,5 @@ inputText.addEventListener('blur', () => {
     {        
         inputText.classList.remove('valid');
         inputText.classList.remove('invalid');
-    }
-  
+    }  
 });
