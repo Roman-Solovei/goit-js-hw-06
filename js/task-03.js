@@ -17,12 +17,14 @@ const images = [
 
 const galleryList = document.querySelector(".gallery");
 
+const galleryMarkup = createGalleryItems(images);
 
+galleryList.insertAdjacentHTML('afterbegin', galleryMarkup);
 
-images.forEach(element => {
-  galleryList.insertAdjacentHTML(
-    'afterbegin',
-    `<li><img src = "${element.url}" alt = "${element.alt}"  width = "450" height = "300" /></li>`,
-  );
-});
-
+function createGalleryItems(images) {  
+  return images
+    .map(({ url, alt }) => {
+      return `
+      <li><img src = "${url}" alt = "${alt}"  width = "450" height = "300" /></li>`;
+    }).join(''); 
+};

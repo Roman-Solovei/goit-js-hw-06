@@ -15,6 +15,6 @@ const ingredientsEl = ingredients.map(ingredient => {
     ulEl.textContent = `${ingredient}`;
     ulEl.classList.add('item');  
     ulList.append(ulEl);  
-});
+}).join('');
 
 

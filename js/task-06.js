@@ -4,17 +4,20 @@ let inputLength = Number(inputText.getAttribute('data-length'));
 
 const input = document.querySelector('input');
 
+function classAddRemove(add, remove) {
+    inputText.classList.add(add);
+    inputText.classList.remove(remove);
+}
+
 inputText.addEventListener('blur', () => {
   const text = inputText.value;
 
-    if (inputLength !== text.length) {
-        inputText.classList.add('invalid');
-        inputText.classList.remove('valid');
+    if (inputLength !== text.length) {       
+        classAddRemove('invalid', 'valid');
     } 
     if (inputLength === text.length)
-    {        
-        inputText.classList.add('valid');
-        inputText.classList.remove('invalid');
+    {      
+        classAddRemove('valid','invalid');
     }
     if (text.length === 0)
     {        
